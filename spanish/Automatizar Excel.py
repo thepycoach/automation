@@ -22,13 +22,10 @@ max_fila = wb.active.max_row
 
 # creando gráficos/charts
 barchart = BarChart()
-
 data = Reference(pestaña, min_col=min_col+1, max_col=max_col, min_row=min_fila, max_row=max_fila)
 categorias = Reference(pestaña, min_col=min_col, max_col=min_col, min_row=min_fila+1, max_row=max_fila)
-
 barchart.add_data(data, titles_from_data=True)
 barchart.set_categories(categorias)
-
 pestaña.add_chart(barchart, 'B12')
 barchart.title = 'Ventas'
 barchart.style = 2
@@ -42,7 +39,6 @@ for i in abecedario_excel:
     if i!='A':
         pestaña[f'{i}{max_fila+1}'] = f'=SUM({i}{min_fila+1}:{i}{max_fila})'
         pestaña[f'{i}{max_fila+1}'].style = 'Currency'
-
 pestaña[f'{abecedario_excel[0]}{max_fila+1}'] = 'Total'
 
 # Dando formato al reporte de Excel
