@@ -5,6 +5,7 @@ from openpyxl.styles import Font
 import string
 import sys, os
 
+# ubicacion del archivo ejecutable
 application_path = os.path.dirname(sys.executable)
 
 def automatizar_excel(nombre_archivo):
