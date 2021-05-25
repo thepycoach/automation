@@ -10,10 +10,10 @@ def automatizar_excel(nombre_archivo):
     archivo_excel = pd.read_excel(nombre_archivo)
     tabla_pivote = archivo_excel.pivot_table(index='Gender', columns='Product line', values='Total', aggfunc='sum').round(0)
     mes_extension = nombre_archivo.split('_')[1]
-    tabla_pivote.to_excel(f'sales_{mes_extension}', startrow=4, sheet_name='Report')
+    tabla_pivote.to_excel(f'report_{mes_extension}', startrow=4, sheet_name='Report')
 
     # leer archivo excel para manipularlo con python
-    wb = load_workbook(f'sales_{mes_extension}')
+    wb = load_workbook(f'report_{mes_extension}')
     pestaña = wb['Report']
 
     min_col = wb.active.min_column
@@ -48,7 +48,7 @@ def automatizar_excel(nombre_archivo):
     pestaña['A1'].font = Font('Arial', bold=True, size=20)
     pestaña['A2'].font = Font('Arial', bold=True, size=12)
 
-    wb.save(f'sales_{mes_extension}')
+    wb.save(f'report_{mes_extension}')
     return
 
 # automatizar reporte 2021
