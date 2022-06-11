@@ -1,0 +1,6 @@
+HTML Basics - Tags and Elements: https://subslikescript.com/movie/The_Luck_of_the_Irish-274636
+HTML Basics - Tree Structure: https://subslikescript.com/movie/Titanic-120338
+XPath - Test Your XPath: https://scrapinghub.github.io/xpath-playground/
+Installing Selenium and ChromeDriver: https://chromedriver.chromium.org/downloads
+Strftime: https://strftime.org/
+Crontab Guru: https://crontab.guru/
