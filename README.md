@@ -5,8 +5,8 @@ This repository contains scripts of my course "Automate Your Life with Python": 
 
 You can find more free content about Python and automation on my Medium articles and YouTube videos.
 
-Medium: https://frank-andrade.medium.com/
-YouTube (only content in Spanish): https://www.youtube.com/c/AndradeFrank/videos
+- Medium: https://frank-andrade.medium.com/
+- YouTube (only content in Spanish): https://www.youtube.com/c/AndradeFrank/videos
 
 2. Spanish 🇪🇸
 
