@@ -22,12 +22,3 @@ df.rename(columns={'name': 'Name', 'mail': 'Email', 'address': 'Address'}, inpla
 
 # export data to csv file
 df.to_csv('fake_data.csv', index=False)
-
-
-
-
-
-
-# Test
-# print(df.loc[0, 'Name'])
-# print(df.loc[0, 'Phone number'])
