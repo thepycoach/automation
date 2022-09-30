@@ -3,9 +3,9 @@ from selenium.webdriver.chrome.service import Service
 import pandas as pd
 import time
 
-path = '/Users/frankandrade/Downloads/chromedriver'
+path = '/Users/frankandrade/Downloads/chromedriver'  # your path goes here
 service = Service(executable_path=path)
-website = 'https://forms.gle/YuQczM1pVUxnkuWL9'
+website = 'https://forms.gle/YuQczM1pVUxnkuWL9'  # your own form goes here
 driver = webdriver.Chrome(service=service)
 
 df = pd.read_csv('fake_data.csv')
