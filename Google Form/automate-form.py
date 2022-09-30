@@ -17,7 +17,7 @@ for i in range(0, len(df)):
         text_input = driver.find_element(by='xpath', value=f'//div[contains(@data-params, "{column}")]//input | '
                                                            f'//div[contains(@data-params, "{column}")]//textarea')
         text_input.send_keys(df.loc[i, column])
-    submit_button = driver.find_element(by='xpath', value='//div[@role="button"]//span[text()="Enviar"]')
+    submit_button = driver.find_element(by='xpath', value='//div[@role="button"]//span[text()="Submit"]')
     submit_button.click()
 
 driver.quit()
