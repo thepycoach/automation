@@ -3,12 +3,16 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
 
-path = '/Users/frankandrade/Downloads/chromedriver'
-service = Service(executable_path=path)
-web = 'https://tinder.com/'
-
+# Edita mensaje y numero de likes
 mensaje_ligar = "Hola!"
 numero_likes = 10
+
+# Nota: Probablemente deban de cambiar el valor de los atributos "text()" en los XPath creados 
+# Mi buscador esta en ingles, pero quizas en la version en español, el texto sea diferente.
+
+path =  # pega la ruta del chromedriver aqui
+service = Service(executable_path=path)
+web = 'https://tinder.com/'
 
 options = Options()
 options.add_experimental_option("debuggerAddress", "localhost:9222")
