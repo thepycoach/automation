@@ -3,16 +3,17 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
 
-path = '/Users/frankandrade/Downloads/chromedriver'
+# edit pickup line and number of swipes
+opening_line = "Hi!"
+number_of_swipes = 10
+
+path = # paste your chromedriver path here
 service = Service(executable_path=path)
 web = 'https://tinder.com/'
 
 options = Options()
 options.add_experimental_option("debuggerAddress", "localhost:9222")
 driver = webdriver.Chrome(service=service, options=options)
-
-opening_line = "Hi!"
-number_of_swipes = 10
 
 driver.get(web)
 time.sleep(3)
