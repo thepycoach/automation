@@ -23,7 +23,6 @@ driver.get(web)
 time.sleep(3)
 for i in range(numero_likes):
     try:
-        time.sleep(3)
         like_button = driver.find_element(by='xpath', value='//button//span[text()="Like"]')
         driver.execute_script("arguments[0].click();", like_button)
         time.sleep(2)
