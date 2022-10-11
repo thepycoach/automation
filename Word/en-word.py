@@ -15,7 +15,6 @@ my_context = {'my_name': my_name, 'my_phone': my_phone, 'my_email': my_email, 'm
 df = pd.read_csv('fake_data.csv')
 
 for index, row in df.iterrows():
-
     context = {'hiring_manager_name': row['name'],
                'address': row['address'],
                'phone_number': row['phone_number'],
